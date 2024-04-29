@@ -1,9 +1,20 @@
-export const App = () => {
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./assets/scss/main.scss";
+import Index from "./components/Index";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">GeekRoom JIMS</h1>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Index />} exact />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
-};
+}
 
 export default App;

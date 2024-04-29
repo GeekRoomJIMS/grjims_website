@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../images/background/main-bg.png");
+  background-size: cover;
+  font-weight: 400;
+  color: #fff;
+  font-family: $montserrat;
+  height: 200vh;
+}
+
+
+.mt-60{
+    margin-top: 60px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.pt-60{
+    padding-top: 60px;
+}
+
+.pb-60{
+    padding-bottom: 60px;
+}
