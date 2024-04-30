@@ -4,8 +4,11 @@
   mix-blend-mode: exclusion;
   padding: 3pc 0;
   h1 {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 700;
-    opacity: 0.4;
+    // opacity: 0.4;
+    color: transparent;
+    -webkit-text-stroke-color: $orange;
+    -webkit-text-stroke-width: 2px;
   }
 }

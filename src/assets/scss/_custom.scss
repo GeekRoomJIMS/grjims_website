@@ -27,3 +27,12 @@ body {
 .pb-60{
     padding-bottom: 60px;
 }
+
+@keyframes blinking {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+.blinking{
+  animation: blinking 1.5s infinite;
+}
