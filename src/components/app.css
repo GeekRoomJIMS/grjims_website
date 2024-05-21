@@ -1,0 +1,21 @@
+#img {
+    padding-top: 10px;
+    padding-left: 10px; 
+    height: 50px;
+    width: 50px;
+}
+
+#header {
+    padding-top: 140px;
+    padding-left: 470px;
+}
+
+#nav {
+    text-align: right;
+}
+
+.main {
+    height: fit-content;
+    width: fit-content;
+}
+
