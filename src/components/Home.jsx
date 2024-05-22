@@ -1,5 +1,5 @@
 import Contact from "./Contact";
-import Faq from "./Faq";
+import Faq from "./faqs/Faq";
 import Footer from "./Footer";
 import Hero from "./hero/Hero";
 import Navbar from "./hero/Navbar";
@@ -12,10 +12,10 @@ const Home = () => {
         <Navbar />
         <Hero />
       </section>
-      {/* <Index /> */}
-      {/* <Faq /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Index />
+      <Faq />
+      <Contact />
+      <Footer />
     </div>
   );
 };

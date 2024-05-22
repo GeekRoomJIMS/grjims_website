@@ -14,7 +14,7 @@ export default {
       },
 
       backgroundImage: {
-        App: "url('/imaes/bg.jpeg')",
+        App: "url('/images/bg.jpeg')",
       },
       rotate: {
         270: "270deg",

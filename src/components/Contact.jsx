@@ -131,10 +131,14 @@ const Contact = () => {
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
   const emailRef = useRef(null);
-  
+
   return (
     <>
-      <div id="contact" className=" bg-cover bg-center overflow-hidden " style={{ backgroundImage: `url(${backgroundImagelp})` }}>
+      <div
+        id="contact"
+        className=" bg-cover bg-center overflow-hidden "
+        style={{ backgroundImage: `url(${backgroundImagelp})` }}
+      >
         <div
           id="container"
           className="h-[100vh] min-h-[44rem] grid md:grid-cols-2 "
@@ -145,7 +149,7 @@ const Contact = () => {
           >
             <div className="form-wrapper max-w-[32rem]">
               <div className="heading mb-[1.2rem]">
-                <h1 className="md:text-[2.2rem] lg:text-[2.8rem] text-[#FF1493] text-2xl leading-tight whitespace-no-wrap" >
+                <h1 className="md:text-[2.2rem] lg:text-[2.8rem] text-[#FF1493] text-2xl leading-tight whitespace-no-wrap">
                   Let's work together
                 </h1>
                 <p className="text-[#636972] text-[0.90rem] md:text-base leading-4 mt-2">
