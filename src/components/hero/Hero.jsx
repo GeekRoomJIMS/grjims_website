@@ -1,22 +1,23 @@
 import React from "react";
-import jims from "../assets/images/jims.png";
-// import background from "/images/background.png";
+import jims from "../../assets/images/jims.png";
 import "./app.css";
+import Navbar from "./Navbar";
 
 function Hero() {
   return (
     <>
-      <div>
-        <nav class="bg-gray-800">
-          <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="relative flex h-16 items-center justify-between">
-              {/* Logo on the left */}
-              <div class="flex h-50 w-50 mx-1 flex-shrink-0 ">
+      <Navbar />
+      {/* <div> */}
+      {/* <nav class="bg-gray-800"> */}
+      {/* <div class="mx-auto max-w-7xl sm:px-6 lg:px-8"> */}
+      {/* <div class="relative flex h-16 items-center justify-between"> */}
+      {/* Logo on the left */}
+      {/* <div class="flex h-50 w-50 mx-1 flex-shrink-0 ">
                 <img src={jims} alt="logo" id="img" class="h-12 w-auto " />
-              </div>
+              </div> */}
 
-              {/* Navigation links on the right */}
-              <div class="hidden sm:block">
+      {/* Navigation links on the right */}
+      {/* <div class="hidden sm:block">
                 <div class="flex space-x-4">
                   <a
                     href="#"
@@ -43,12 +44,12 @@ function Hero() {
                     Contact Us
                   </a>
                 </div>
-              </div>
-            </div>
-          </div>
+              </div> */}
+      {/* </div> */}
+      {/* </div> */}
 
-          {/* Mobile Menu */}
-          <div class="sm:hidden" id="mobile-menu">
+      {/* Mobile Menu */}
+      {/* <div class="sm:hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pb-3 pt-2">
               <a
                 href="#"
@@ -76,10 +77,10 @@ function Hero() {
               </a>
             </div>
           </div>
-        </nav>
-      </div>
+        </nav> */}
+      {/* </div> */}
 
-      <div
+      {/* <div
         class="main"
         className="flex flex-col bg-no-repeat bg-center"
         id="header"
@@ -93,12 +94,12 @@ function Hero() {
             Connect. Learn. Grow
           </p>
         </header>
-      </div>
-      <div class="relative h-32 w-32 ...">
+      </div> */}
+      {/* <div class="relative h-32 w-32 ...">
         <div class="absolute inset-x-0 bottom-0 h-16 ...">
           <h1 className="text-white">Know more</h1>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

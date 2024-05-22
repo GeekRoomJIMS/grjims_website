@@ -1,17 +1,17 @@
 import Contact from "./Contact";
 import Faq from "./Faq";
 import Footer from "./Footer";
-import Hero from "./Hero";
+import Hero from "./hero/Hero";
 import Index from "./Index";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Index />
-      <Faq />
+      {/* <Index /> */}
+      {/* <Faq /> */}
       {/* <Contact /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
