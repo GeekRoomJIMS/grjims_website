@@ -1,14 +1,21 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./assets/scss/main.scss";
-import Contact from "./components/Contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./components/Home";
+import "./assets/scss/main.scss";
+import "./app.css";
+import Events from "./components/events/Events";
+import Achievements from "./components/achievements/Achievements";
+import Blogs from "./components/blogs/Blogs";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
     </BrowserRouter>
   );
