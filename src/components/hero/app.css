@@ -1,4 +1,4 @@
-#img {
+/* #img {
   padding-top: 10px;
   padding-left: 10px;
   height: 50px;
@@ -17,4 +17,29 @@
 .main {
   height: fit-content;
   width: fit-content;
+} */
+
+.App {
+  display: flex;
+  height: 87vh;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .left-column {
+    background: url("../../assets/images/bg_img.png") no-repeat center center;
+    background-size: cover;
+  }
 }

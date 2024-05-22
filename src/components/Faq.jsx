@@ -1,5 +1,6 @@
 import { Accordion } from "react-bootstrap";
 import "./faqStyle.css";
+
 function Faq() {
   return (
     <>
