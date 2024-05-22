@@ -5,7 +5,7 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer
-      className="position-absolute top-100 start-50 translate-middle"
+      className="mt-auto"
       style={{
         backgroundColor: "rgba(0, 0, 0, 0.4)",
         color: "#fff",

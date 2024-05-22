@@ -4,21 +4,6 @@ import "./app.css";
 function Hero() {
   return (
     <>
-      {/* <div
-        class="main"
-        className="flex flex-col bg-no-repeat bg-center"
-        id="header"
-      >
-        <header class="animate-swingIn">
-          <h1 className="font-bold text-9xl text-white">Geek Room</h1>
-          <br />
-          <br />
-          <p className="text-3xl text-white animate-pulse">
-            {" "}
-            Connect. Learn. Grow
-          </p>
-        </header>
-      </div> */}
       <div className="App">
         <div className="left-column hidden md:block"></div>
         <div className="right-column w-full md:w-6/12 h-full flex flex-col justify-center items-center px-4 md:px-0">
