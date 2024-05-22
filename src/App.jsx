@@ -1,19 +1,22 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./components/Home";
 import "./assets/scss/main.scss";
-import Index from "./components/Index";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+import "./app.css";
+import Events from "./components/events/Events";
+import Achievements from "./components/achievements/Achievements";
+import Blogs from "./components/blogs/Blogs";
+
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
