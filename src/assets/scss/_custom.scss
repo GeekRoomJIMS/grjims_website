@@ -4,11 +4,11 @@ html {
 
 body {
   background-image: url("../images/background/main-bg.png");
+  background-repeat: no-repeat;
   background-size: cover;
   font-weight: 400;
   color: #fff;
   font-family: $montserrat;
-  height: 100vh;
 }
 
 .mt-60 {
