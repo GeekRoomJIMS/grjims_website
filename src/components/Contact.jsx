@@ -136,8 +136,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className=" bg-cover bg-center overflow-hidden "
-        style={{ backgroundImage: `url(${backgroundImagelp})` }}
+        
       >
         <div
           id="container"
