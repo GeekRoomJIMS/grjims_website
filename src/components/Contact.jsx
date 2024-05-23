@@ -3,7 +3,8 @@ import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPaperclip } from "react-icons/fi";
 import contactImg from "../assets/images/contactimg/contact.png";
-import backgroundImagelp from "../assets/images/background/main-bg.png";
+// import backgroundImagelp from "../assets/images/background/main-bg.png";
+
 const Contact = () => {
   const validateName = (name) => {
     const pattern = /^[a-zA-Z]+$/;
@@ -137,7 +138,7 @@ const Contact = () => {
       <div
         id="contact"
         className=" bg-cover bg-center overflow-hidden "
-        style={{ backgroundImage: `url(${backgroundImagelp})` }}
+        // style={{ backgroundImage: `url(${backgroundImagelp})` }}
       >
         <div
           id="container"

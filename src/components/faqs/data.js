@@ -12,7 +12,7 @@ export const faqs = [
     isOpen: false,
   },
   {
-    question: "Do you hold any coding events?",
+    question: "Do you host any coding events, and are they open for everyone?",
     answer:
       "Yes, and yes! We hold lots of coding-related events, which are generally free to join!",
     isOpen: false,

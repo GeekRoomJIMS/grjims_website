@@ -14,8 +14,14 @@
   }
 }
 
-@media (max-width: 824px) {
+@media (max-width: 800px) {
   .geek-room-chapter h1 {
-    font-size: 35px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 724px) {
+  .geek-room-chapter h1 {
+    font-size: 25px;
   }
 }
