@@ -61,23 +61,23 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/events"
                   style={{ color: "#eaece5", textDecoration: "none" }}
                 >
-                  About Us
+                  Events
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="/"
                   style={{ color: "#eaece5", textDecoration: "none" }}
                 >
                   Contact Us
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="/"
+                  href="/achievements"
                   style={{ color: "#eaece5", textDecoration: "none" }}
                 >
                   Achievements
@@ -85,10 +85,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/blogs"
                   style={{ color: "#eaece5", textDecoration: "none" }}
                 >
-                  Hackathons
+                  Blogs
                 </a>
               </li>
             </ul>
@@ -113,7 +113,7 @@ const Footer = () => {
                 color: "#eaece5",
                 textAlign: "justify",
               }}
-            >
+            > 
               Jagan Institute of Management Studies Technical Campus- JIMS
               Rohini 3 Near Rithala Metro Station, Rohini Sector 5,
               Institutional Area, New Delhi, Delhi 110085
