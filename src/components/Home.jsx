@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Hero from "./hero/Hero";
 import Navbar from "./hero/Navbar";
 import Index from "./Index";
+import CarouselComponent from "./CarouselComponent";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Hero />
       </section>
       <Index />
+      <CarouselComponent />
       <Faq />
       <Contact />
       <Footer />
