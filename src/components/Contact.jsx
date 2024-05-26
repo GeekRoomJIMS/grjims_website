@@ -200,6 +200,7 @@ const Contact = () => {
                 >
                   <input
                     id="firstname"
+                    name="firstname"
                     type="text"
                     className={` shadow-md contact-input text-black border-2 border-transparent border-solid w-full bg-[#3d61af1f]  md:text-base rounded-[0.55rem]  outline-none ${
                       firstNameFocused ? "bg-white" : "text-white"
@@ -248,6 +249,7 @@ const Contact = () => {
                 >
                   <input
                     id="lastname"
+                    name="lastname"
                     type="text"
                     autoComplete="off"
                     className={` shadow-md contact-input text-black w-full border-2 border-transparent border-solid bg-[#3d61af2c] rounded-[0.55rem] outline-none text-base ${
@@ -296,6 +298,7 @@ const Contact = () => {
                   <input
                     id="email"
                     type="email"
+                    name="email"
                     className={` shadow-md text-black contact-input border-2 border-transparent border-solid w-full bg-[#3d61af1f] rounded-[0.55rem]  outline-none text-base ${
                       emailFocused ? "bg-white" : "text-white"
                     }`}
