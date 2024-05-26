@@ -18,16 +18,16 @@ const Footer = () => {
           <Col md={6} xs={12} className="text-center text-md-start">
             <h1
               style={{
-                fontFamily: "Arial Narrow, sans-serif",
+                fontFamily: "Montserrat, sans-serif",
                 fontSize: "3rem",
-                fontWeight: "bold",
+                fontWeight: "700",
               }}
             >
               GEEK ROOM JIMS
             </h1>
             <h4
               style={{
-                fontFamily: "Bahnschrift Light, sans-serif",
+                fontFamily: "Sora, sans-serif",
                 fontSize: "1.5rem",
                 marginTop: "10px",
               }}
@@ -44,7 +44,7 @@ const Footer = () => {
           >
             <h4
               style={{
-                fontFamily: "Bahnschrift Light, sans-serif",
+                fontFamily: "Sora, sans-serif",
                 fontSize: "1.5rem",
               }}
             >
@@ -100,7 +100,7 @@ const Footer = () => {
           >
             <h4
               style={{
-                fontFamily: "Bahnschrift Light, sans-serif",
+                fontFamily: "Sora, sans-serif",
                 fontSize: "1.5rem",
               }}
             >
@@ -108,7 +108,7 @@ const Footer = () => {
             </h4>
             <p
               style={{
-                fontFamily: "Bahnschrift Light, sans-serif",
+                fontFamily: "Montserrat, sans-serif",
                 fontSize: "1rem",
                 color: "#eaece5",
                 textAlign: "justify",
@@ -156,7 +156,7 @@ const Footer = () => {
           <Col className="text-center">
             <h4
               style={{
-                fontFamily: "Bahnschrift Light, sans-serif",
+                fontFamily: "Sora, sans-serif",
                 fontSize: "1rem",
                 color: "#eaece5",
               }}
