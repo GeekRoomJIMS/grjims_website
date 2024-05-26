@@ -1,11 +1,13 @@
 import React, { useState, useRef } from "react";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
-import { FiPaperclip } from "react-icons/fi";
 import contactImg from "../assets/images/contactimg/contact.png";
+import emailjs from "@emailjs/browser";
+import { Toaster, toast } from 'react-hot-toast';
 // import backgroundImagelp from "../assets/images/background/main-bg.png";
 
 const Contact = () => {
+  const form = useRef();
   const validateName = (name) => {
     const pattern = /^[a-zA-Z]+$/;
     return pattern.test(name) && name.length >= 3;
@@ -122,10 +124,26 @@ const Contact = () => {
       }
       return;
     }
-    setFirstNameValue("");
-    setLastNameValue("");
-    setEmailValue("");
-    setMessageValue("");
+    const serviceId = "service_o0sctws";
+    const templateId = "template_yraydrt";
+    emailjs
+    .sendForm(serviceId,templateId, form.current, {
+      publicKey: 'DPvwp4bpAe5plm_xz',
+    })
+    .then(
+      () => {
+        toast.success('Form submitted successfully!',{
+          duration:2000,
+        });
+        setFirstNameValue('');
+        setLastNameValue('');
+        setEmailValue('');
+        setMessageValue('');
+      },
+      (error) => {
+        console.log('FAILED...');
+      },
+    );
   };
 
   // focusing empty fields after submission
@@ -165,6 +183,7 @@ const Contact = () => {
               </div>
               <form
                 onSubmit={handleSubmit}
+                ref={form}
                 className={` grid grid-cols-2 gap-x-8 ${
                   firstNameError || lastNameError || emailError
                     ? "gap-y-9 md:gap-y-5"
@@ -181,6 +200,7 @@ const Contact = () => {
                 >
                   <input
                     id="firstname"
+                    name="firstname"
                     type="text"
                     className={` shadow-md contact-input text-black border-2 border-transparent border-solid w-full bg-[#3d61af1f]  md:text-base rounded-[0.55rem]  outline-none ${
                       firstNameFocused ? "bg-white" : "text-white"
@@ -190,6 +210,7 @@ const Contact = () => {
                         ? "calc(1.5rem - 2px) calc(1.35rem - 2px) calc(10px - 2px)"
                         : "1.5rem 1.35rem 10px",
                     }}
+                    autoComplete="off"
                     ref={firstNameRef}
                     onChange={handleFirstNameChange}
                     value={firstNameValue}
@@ -228,9 +249,11 @@ const Contact = () => {
                 >
                   <input
                     id="lastname"
+                    name="lastname"
                     type="text"
+                    autoComplete="off"
                     className={` shadow-md contact-input text-black w-full border-2 border-transparent border-solid bg-[#3d61af2c] rounded-[0.55rem] outline-none text-base ${
-                      lastNameFocused ? "bg-white" : "text-white"
+                      lastNameFocused ? "bg-white" : " text-white"
                     }`}
                     style={{
                       padding: lastNameFocused
@@ -275,6 +298,7 @@ const Contact = () => {
                   <input
                     id="email"
                     type="email"
+                    name="email"
                     className={` shadow-md text-black contact-input border-2 border-transparent border-solid w-full bg-[#3d61af1f] rounded-[0.55rem]  outline-none text-base ${
                       emailFocused ? "bg-white" : "text-white"
                     }`}
@@ -355,27 +379,14 @@ const Contact = () => {
                     } h-5 w-5  right-[1.475rem]`}
                   />
                 </div>
-                <div className="w-[100%] grid md:grid-cols-2 gap-y-4 gap-x-[1rem] mt-[1rem] col-span-2">
-                  <button className="  py-[0.75rem] px-[2rem]  outline-none relative text-slate-500 bg-[#3d61af2c] rounded-[40px] shadow-md ">
-                    <span className="flex gap-x-1 justify-center items-center text-gray-50">
-                      <FiPaperclip />
-                      Add File
-                    </span>
-                    <input
-                      type="file"
-                      name="attachment"
-                      multiple
-                      id="file"
-                      className="absolute w-full h-full top-0 left-0 opacity-0"
-                    />
-                  </button>
-
+                <div className=" col-span-2 grid md:flex md:justify-center">
                   <input
                     type="submit"
                     value="Send"
-                    className=" outline-none py-[0.75rem] px-[2rem]  cursor-pointer hover:bg-blue-600  inline-block   bg-blue-400 text-white rounded-[40px]"
+                    className=" md:w-[20rem] outline-none py-[0.75rem] px-[2rem]  cursor-pointer hover:bg-blue-600  inline-block   bg-blue-400 text-white rounded-[40px]"
                   />
                 </div>
+                <Toaster/>
               </form>
             </div>
           </div>
