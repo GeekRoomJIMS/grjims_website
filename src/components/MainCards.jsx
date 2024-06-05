@@ -110,7 +110,7 @@ const MainCards = () => {
         </button>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 md:max-w-7xl md:mx-auto mx-4 gap-x-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 md:max-w-7xl md:mx-auto mx-4 gap-x-4 min-h-screen">
         {showPreviousEvents &&
           filteredAndSortedCards
             .filter((card) => card.category === "previous")
