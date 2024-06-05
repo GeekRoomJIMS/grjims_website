@@ -1,5 +1,8 @@
+import Eventcards from "../MainCards.jsx"
 const Events = () => {
-  return <div className="flex justify-center text-6xl">Coming Soon</div>;
+  return <>
+  <Eventcards/>
+  </>;
 };
 
 export default Events;

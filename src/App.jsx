@@ -8,7 +8,7 @@ import Events from "./components/events/Events";
 import Achievements from "./components/achievements/Achievements";
 import Blogs from "./components/blogs/Blogs";
 import  Contact from "./components/Contact.jsx";
-import Eventcards from "./components/MainCards.jsx"
+
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
         <Route path="/achievements" element={<Achievements />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/eventcards" element={<Eventcards/>} />
       </Routes>
     </BrowserRouter>
   );
