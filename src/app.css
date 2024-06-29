@@ -3,3 +3,40 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.maincontainer {
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+@media (max-width: 1536px) {
+  .maincontainer {
+    max-width: 1366px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .maincontainer {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .maincontainer {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .maincontainer {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .maincontainer {
+    max-width: 638px;
+  }
+}
