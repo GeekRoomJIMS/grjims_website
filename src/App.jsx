@@ -1,18 +1,23 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
 import "./assets/scss/main.scss";
-import Index from "./components/Index";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import "./app.css";
+import Events from "./components/events/Events";
+import Achievements from "./components/achievements/Achievements";
+import Blogs from "./components/blogs/Blogs";
+import  Contact from "./components/Contact.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path="/" element={<Index />} exact />
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

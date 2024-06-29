@@ -3,12 +3,25 @@
   background-repeat: repeat;
   mix-blend-mode: exclusion;
   padding: 3pc 0;
+  margin-top: 3em;
+
   h1 {
     font-size: 55px;
     font-weight: 700;
-    // opacity: 0.4;
     color: transparent;
     -webkit-text-stroke-color: $orange;
     -webkit-text-stroke-width: 2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .geek-room-chapter h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 724px) {
+  .geek-room-chapter h1 {
+    font-size: 25px;
   }
 }
