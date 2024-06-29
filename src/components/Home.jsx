@@ -10,14 +10,12 @@ const Home = () => {
   return (
     <div>
       <section className="h-[100vh]">
-        <Navbar />
         <Hero />
       </section>
       <Index />
       <CarouselComponent />
       <Faq />
       <Contact />
-      <Footer />
     </div>
   );
 };
