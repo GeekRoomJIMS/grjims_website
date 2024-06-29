@@ -2,6 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 5px !important;
+  // &-track {
+  //   background: #f1f1f1;
+  // }
+  // &-thumb {
+  //   background: #888;
+  //   &:hover {
+  //     background: #555;
+  //   }
+  // }
+}
+
 body {
   background-image: url("../images/background/main-bg.png");
   background-repeat: no-repeat;
