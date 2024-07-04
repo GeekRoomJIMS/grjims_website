@@ -174,10 +174,10 @@ const Contact = () => {
                 <p className="text-[#636972] text-[0.90rem] md:text-base leading-4 mt-2">
                   or reach us via :
                   <a
-                    href="#"
+                  
                     className="ml-2 text-blue-500 duration-300 hover:underline transition-all hover:text-blue-700 cursor-pointer"
                   >
-                    grj@gmail.com
+                    geekroomjimsrohini@gmail.com
                   </a>
                 </p>
               </div>
