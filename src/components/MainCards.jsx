@@ -1,4 +1,6 @@
 import React, { useState,useEffect } from "react";
+import Navbar from "./hero/Navbar";
+import Footer from "./Footer";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 import Cards from "./Cards";
 const MainCards = () => {
@@ -9,33 +11,16 @@ const MainCards = () => {
   const [cards, setCards] = useState([
     {
       id: 1,
-      date: "5-2-2024",
+      date: "5-1-2024",
+      enddate:"6-1-2024",
       category: "previous",
-      title: "A Thrilling 36 Hour Hackathon",
-      description: `Organized by Geek Room a vibrant community dedicated to enhancing
-      coding skills, started as an open community for solving
-      tech-related queries and participating in college competitions.`,
-      teams: 500,
-      status: "Completed",
+      title: "Code Kshetra",
+      description: `Delhi's one of the largest hackathon with 400+active coders ,
+      50 Lakh+ prize pool and a defolio rating of 4.5 `,
+      teams: "400+",
+      status: "Know more",
     },
-    {
-      id: 2,
-      date: "2024-05-18",
-      category: "upcoming",
-      title: "Code Cubicle Semi-Final",
-      description: `Organized exclusively by Geek Room at Microsoft Office Gurugram, this hackathon promises an electrifying experience`,
-      status: "Register",
-    },
-    {
-      id: 3,
-      title: "Code Cubicle Final",
-      category: "upcoming",
-      date: "2024-05-20",
-      place: "Gurugram",
-      time: "9:0:0",
-      status: "Register",
-      description: `Organized exclusively by Geek Room at Microsoft Office Gurugram, this hackathon promises an electrifying experience`,
-    },
+  
   ]);
   
 
@@ -76,6 +61,7 @@ const MainCards = () => {
 
   return (
     <>
+      <Navbar/>      
       <div className="text-white font-bold text-md sm:text-lg md:text-xl lg:text-2xl flex flex-col lg:flex-row mb-5  justify-center md:justify-around items-center  max-w-7xl mx-auto ">
         <div className="my-3">
         <button className="mr-4 md:mr-10" onClick={togglePreviousEvents}>Previous Events</button>
@@ -118,26 +104,34 @@ const MainCards = () => {
               <Cards
                 key={card.id}
                 date={card.date}
+                enddate={card.enddate}
                 title={card.title}
                 description={card.description}
                 teams={card.teams}
                 status={card.status}
               />
             ))}
-        {showUpcomingEvents &&
-          filteredAndSortedCards
-            .filter((card) => card.category === "upcoming")
-            .map((card) => (
-              <Cards
-                key={card.id}
-                date={card.date}
-                title={card.title}
-                description={card.description}
-                teams={card.teams}
-                status={card.status}
-              />
-            ))}
+     {showUpcomingEvents &&
+  (filteredAndSortedCards
+    .filter((card) => card.category === "upcoming")
+    .length === 0 ? (
+      <p className="text-2xl font-bold text-center  ">More Events Coming Soon</p>
+    ) : (
+      filteredAndSortedCards
+        .filter((card) => card.category === "upcoming")
+        .map((card) => (
+          <Cards
+            key={card.id}
+            date={card.date}
+            title={card.title}
+            description={card.description}
+            teams={card.teams}
+            status={card.status}
+          />
+        ))
+    ))}
       </div>
+      <Footer/>
     </>
   );
 };
