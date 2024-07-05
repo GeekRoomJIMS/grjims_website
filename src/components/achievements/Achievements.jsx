@@ -9,28 +9,28 @@ const Index = () => {
       front: { title: "Code Kshetra", para: "Hackathon" },
       back: {
         title: "Hackathon",
-        para: "Hosted Delhi's biggest hackathon, hosted @ JIMS, Rohini",
+        para: "Organized Delhi's one of the largest hackathon, with 400+ active coders, 50 Lakh+ prize pool and a devfolio rating of 4.5.",
       },
     },
     {
-      front: { title: "Techfest", para: "Hackathon" },
+      front: { title: "Techfest Win", para: "Hackathon" },
       back: {
         title: "Hackathon",
-        para: "Hosted a hackathon @ IITM, Janakpuri",
+        para: "1st Prize at Techminds Hackathon @ IITM Janakpuri",
       },
     },
     {
-      front: { title: "Code Cubicle", para: "Hackathon" },
+      front: { title: "SIH Finalists", para: "Hackathon" },
       back: {
         title: "Hackathon",
-        para: "Hosted a hackathon @ Eccosphere Coworking Space, Noida",
+        para: "2 Teams from GeekRoom JIMS to Smart India Hackathon Finals.",
       },
     },
     {
-      front: { title: "Algohunt", para: "Problem-Solving Event" },
+      front: { title: "Code Hunt", para: "Event" },
       back: {
         title: "Event",
-        para: "Hosted a treasure-styled problem solving event",
+        para: "1st Prize at Coding Competetion Code Hunt organized by TechQube.",
       },
     },
   ];
