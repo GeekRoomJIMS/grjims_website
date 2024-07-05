@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -67,14 +67,6 @@ const Footer = () => {
                   Events
                 </a>
               </li>
-              {/* <li>
-                <a
-                  href="/"
-                  style={{ color: "#eaece5", textDecoration: "none" }}
-                >
-                  Contact Us
-                </a>
-              </li> */}
               <li>
                 <a
                   href="/achievements"
@@ -119,7 +111,12 @@ const Footer = () => {
               Institutional Area, New Delhi, Delhi 110085
             </p>
             <div className="d-flex justify-content-center justify-content-md-start">
-              <a href="https://www.linkedin.com/" className="me-3">
+              <a
+                href="https://www.linkedin.com/company/geekroom-jims/"
+                className="me-3"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FaLinkedin
                   style={{
                     color: "HighlightText",
@@ -129,7 +126,12 @@ const Footer = () => {
                   }}
                 />
               </a>
-              <a href="https://www.instagram.com/" className="me-3">
+              <a
+                href="https://www.instagram.com/geekroom_jims/"
+                className="me-3"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FaInstagram
                   style={{
                     color: "HighlightText",
@@ -139,8 +141,12 @@ const Footer = () => {
                   }}
                 />
               </a>
-              <a href="https://www.twitter.com/">
-                <FaTwitter
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=geekroomjimsrohini@gmail.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FaEnvelope
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
