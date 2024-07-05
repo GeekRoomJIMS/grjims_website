@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter ,FaEnvelope} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -119,33 +119,33 @@ const Footer = () => {
               Institutional Area, New Delhi, Delhi 110085
             </p>
             <div className="d-flex justify-content-center justify-content-md-start">
-              <a href="https://www.linkedin.com/" className="me-3">
+              <a href="https://www.linkedin.com/company/geekroom-jims" className="me-3">
                 <FaLinkedin
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
-                    width: "20px",
-                    height: "20px",
+                    width: "30px",
+                    height: "30px",
                   }}
                 />
               </a>
-              <a href="https://www.instagram.com/" className="me-3">
+              <a href="geekroomjimsrohini@gmail.com" className="me-3">
+                <FaEnvelope
+                  style={{
+                    color: "HighlightText",
+                    strokeWidth: "2px",
+                    width: "30px",
+                    height: "30px",
+                  }}
+                />
+              </a>
+              <a href="https://www.instagram.com/geekroom_jims?igsh=MTQ5dXQzZG9uOTQ1NA==" className="me-3">
                 <FaInstagram
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
-                    width: "20px",
-                    height: "20px",
-                  }}
-                />
-              </a>
-              <a href="https://www.twitter.com/">
-                <FaTwitter
-                  style={{
-                    color: "HighlightText",
-                    strokeWidth: "2px",
-                    width: "20px",
-                    height: "20px",
+                    width: "30px",
+                    height: "30px",
                   }}
                 />
               </a>

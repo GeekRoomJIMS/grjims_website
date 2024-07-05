@@ -9,12 +9,12 @@
   filter: blur(5px);
   top: 0;
   left: 0;
-  width: 50%;
+  width: 80%;
   opacity: 0.09;
 }
 
 .bgimg img {
-  width: 100%;
+  width: 120%;
 }
 
 .innercontainer {
@@ -26,7 +26,7 @@
 }
 
 .img {
-  z-index: 100;
+  z-index: 10;
   width: 50%;
 }
 
@@ -46,7 +46,7 @@
 .cardscontainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 5rem;
   justify-content: center;
 }
 
@@ -58,8 +58,8 @@
 }
 
 .card {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   position: absolute;
   backface-visibility: hidden;
   border-radius: 10px;
@@ -98,7 +98,7 @@
   transform: rotateY(360deg);
 }
 
-.card h3 {
+.card h2 {
   color: white;
   margin: 0;
   font-size: 1.5rem;
@@ -137,6 +137,6 @@
     font-size: 2.5rem;
   }
   .img {
-    width: 70%;
+    width: 90%;
   }
 }

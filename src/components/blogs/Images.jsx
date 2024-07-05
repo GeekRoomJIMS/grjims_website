@@ -1,5 +1,5 @@
-import blog from '../../assets/images/background/blog.jpg' ;
+import nvidia from '../../assets/images/background/nvidia.jpeg' ;
 
 export const images = {
-    blog
+    nvidia
 };

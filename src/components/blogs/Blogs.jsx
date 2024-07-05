@@ -7,40 +7,40 @@ import Footer from "../Footer";
 
 const blogs = [
   {
-    id:4,
-    title: "Understanding React Hooks",
-    author: "Jane Doe",
+    id:1,
+    title: "NVIDIA vs MICROSOFT",
+    author: "Geekroom Jims",
     date: "June 25, 2024",
     summary:
-      "An in-depth look at how React hooks work and how to use them effectively in your projects.",
-    imageUrl: images.blog
-  },
-  {
-    id:1,
-    title: "Getting Started with TypeScript",
-    author: "John Smith",
-    date: "June 10, 2024",
-    summary:
-      "A beginner-friendly guide to integrating TypeScript into your JavaScript projects.",
-    imageUrl: images.blog
+      "NVIDIA briefly surpassed Microsoft as the world's most valuable company due to its AI advancements, but Microsoft's stock rebound quickly reclaimed the top spot.",
+    imageUrl: images.nvidia
   },
   {
     id:2,
-    title: "Understanding React Hooks",
-    author: "Jane Doe",
-    date: "June 15, 2024",
+    title: "GPT-4o",
+    author: "Geekroom Jims",
+    date: "May 13, 2024",
     summary:
-      "An in-depth look at how React hooks work and how to use them effectively in your projects.",
-    imageUrl: images.blog
+      "Why is GPT-4o free ? 🤔",
+    imageUrl: images.blog_1
   },
   {
     id:3,
+    title: "GenAi and LLMs are the talk of the town 🚀",
+      author: "Geekroom Jims",
+      date: "June 15, 2024",
+    summary:
+      "India is advancing in GenAI with innovative models like Krutrim and BharatGPT, and strategic partnerships with Nvidia, highlighting its growing AI capabilities.",
+    imageUrl: images.nvidia
+  },
+  {
+    id:4,
     title: "Getting Started with TypeScript",
     author: "John Smith",
     date: "June 23, 2024",
     summary:
       "A beginner-friendly guide to integrating TypeScript into your JavaScript projects.",
-    imageUrl: images.blog
+    imageUrl: images.nvidia
   },
   {
     id:5,
@@ -49,7 +49,7 @@ const blogs = [
     date: "June 29, 2024",
     summary:
       "An in-depth look at how React hooks work and how to use them effectively in your projects.",
-    imageUrl: images.blog
+    imageUrl: images.nvidia
   },
 ];
 

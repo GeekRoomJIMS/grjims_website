@@ -53,7 +53,7 @@ const Index = () => {
                 {cardData.map((card, index) => (
                   <div key={index} className={styles.cardcontainer}>
                     <div className={`${styles.card} ${styles.cardfront}`}>
-                      <h3>{card.front.title}</h3>
+                      <h2>{card.front.title}</h2>
                       <p>{card.front.para}</p>
                     </div>
                     <div className={`${styles.card} ${styles.cardback}`}>
