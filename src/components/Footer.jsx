@@ -106,9 +106,16 @@ const Footer = () => {
                 textAlign: "justify",
               }}
             >
-              Jagan Institute of Management Studies Technical Campus- JIMS
-              Rohini 3 Near Rithala Metro Station, Rohini Sector 5,
-              Institutional Area, New Delhi, Delhi 110085
+              <b>Email</b> : <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=geekroomjimsrohini@gmail.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                style={{color:"#64B5F6"}}
+              >geekroomjimsrohini@gmail.com</a>
+              <br />
+              <b>Institution</b> : Jagan Institute of Management Studies, Sector-5, Rohini, Delhi
+
+
             </p>
             <div className="d-flex justify-content-center justify-content-md-start">
               <a
@@ -121,8 +128,8 @@ const Footer = () => {
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
-                    width: "20px",
-                    height: "20px",
+                    width: "30px",
+                    height: "30px",
                   }}
                 />
               </a>
@@ -136,8 +143,8 @@ const Footer = () => {
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
-                    width: "20px",
-                    height: "20px",
+                    width: "30px",
+                    height: "30px",
                   }}
                 />
               </a>
@@ -150,8 +157,8 @@ const Footer = () => {
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
-                    width: "20px",
-                    height: "20px",
+                    width: "30px",
+                    height: "30px",
                   }}
                 />
               </a>
