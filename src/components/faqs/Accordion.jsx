@@ -1,5 +1,4 @@
-import plusIcon from "../../assets/images/faqs/icon-plus.svg";
-import minusIcon from "../../assets/images/faqs/icon-minus.svg";
+import { IoIosArrowUp,IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
@@ -16,18 +15,18 @@ const Accordion = ({ isAccOpen, ques, ans }) => {
       {/* questions */}
       <p
         onClick={toggleOpen}
-        className="text-black flex justify-between gap-2 sm:text-lg font-semibold cursor-pointer"
+        className="text-[#ff8200] flex justify-between gap-2 sm:text-lg font-bold cursor-pointer"
       >
         <span>{ques}</span>
         {!isOpen ? (
-          <img src={plusIcon} alt="plus icon" className="h-6 w-auto" />
+          <IoIosArrowDown className="h-5 w-auto text-purple-400"/>
         ) : (
-          <img src={minusIcon} alt="minus icon" className="h-6 w-auto" />
+          <IoIosArrowUp className="h-5 w-auto text-purple-400"/>
         )}
       </p>
 
       {/* answers */}
-      {isOpen && <p className="text-sm sm:text-base text-gray-600">{ans}</p>}
+      {isOpen && <p className="text-sm sm:text-base text-[#d3d3d3]">{ans}</p>}
     </div>
   );
 };
