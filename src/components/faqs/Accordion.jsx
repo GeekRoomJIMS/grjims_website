@@ -1,4 +1,4 @@
-import { IoIosArrowUp,IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
@@ -19,9 +19,9 @@ const Accordion = ({ isAccOpen, ques, ans }) => {
       >
         <span>{ques}</span>
         {!isOpen ? (
-          <IoIosArrowDown className="h-5 w-auto text-purple-400"/>
+          <IoIosArrowDown className="h-5 w-auto text-purple-400" />
         ) : (
-          <IoIosArrowUp className="h-5 w-auto text-purple-400"/>
+          <IoIosArrowUp className="h-5 w-auto text-purple-400" />
         )}
       </p>
 

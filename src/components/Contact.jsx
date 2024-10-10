@@ -3,7 +3,7 @@ import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import contactImg from "../assets/images/contactimg/contact.png";
 import emailjs from "@emailjs/browser";
-import { Toaster, toast } from 'react-hot-toast';
+import { Toaster, toast } from "react-hot-toast";
 // import backgroundImagelp from "../assets/images/background/main-bg.png";
 
 const Contact = () => {
@@ -127,23 +127,23 @@ const Contact = () => {
     const serviceId = "service_o0sctws";
     const templateId = "template_yraydrt";
     emailjs
-    .sendForm(serviceId,templateId, form.current, {
-      publicKey: 'DPvwp4bpAe5plm_xz',
-    })
-    .then(
-      () => {
-        toast.success('Form submitted successfully!',{
-          duration:2000,
-        });
-        setFirstNameValue('');
-        setLastNameValue('');
-        setEmailValue('');
-        setMessageValue('');
-      },
-      (error) => {
-        console.log('FAILED...');
-      },
-    );
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: "DPvwp4bpAe5plm_xz",
+      })
+      .then(
+        () => {
+          toast.success("Form submitted successfully!", {
+            duration: 2000,
+          });
+          setFirstNameValue("");
+          setLastNameValue("");
+          setEmailValue("");
+          setMessageValue("");
+        },
+        (error) => {
+          console.log("FAILED...");
+        }
+      );
   };
 
   // focusing empty fields after submission
@@ -155,7 +155,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className=" bg-cover bg-center overflow-hidden "
+        className=" bg-cover bg-center overflow-hidden p-4"
         // style={{ backgroundImage: `url(${backgroundImagelp})` }}
       >
         <div
@@ -173,10 +173,7 @@ const Contact = () => {
                 </h1>
                 <p className="text-[#636972] text-[0.90rem] md:text-base leading-4 mt-2">
                   or reach us via :
-                  <a
-                  
-                    className="ml-2 text-blue-500 duration-300 hover:underline transition-all hover:text-blue-700 cursor-pointer"
-                  >
+                  <a className="ml-2 text-blue-500 duration-300 hover:underline transition-all hover:text-blue-700 cursor-pointer">
                     geekroomjimsrohini@gmail.com
                   </a>
                 </p>
@@ -386,7 +383,7 @@ const Contact = () => {
                     className=" md:w-[20rem] outline-none py-[0.75rem] px-[2rem]  cursor-pointer hover:bg-blue-600  inline-block   bg-blue-400 text-white rounded-[40px]"
                   />
                 </div>
-                <Toaster/>
+                <Toaster />
               </form>
             </div>
           </div>
