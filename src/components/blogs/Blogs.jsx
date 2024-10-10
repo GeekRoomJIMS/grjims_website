@@ -98,8 +98,8 @@ const Blogs = () => {
 
   return (
     <div className="h-[100vh] blog-page">
+      <Navbar />
       <div className="container px-[1.5rem]">
-        <Navbar />
         <div className="flex align-items-center flex-col md:flex-row justify-content-between py-4 mb-4">
           <h1 className=" text-3xl md:text-5xl font-medium">Blogs</h1>
           <div className="flex gap-x-6 mt-3">

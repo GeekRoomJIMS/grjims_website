@@ -65,7 +65,7 @@ const BlogDetail = () => {
     return <div>Blog not found</div>;
   }
   return (
-    <div className="h-[100vh] blog-detail">
+    <div className="h-[100vh] blog-detail bg-yellow-400">
       <div className="container">
         <img src={images.blog} className="image" />
 

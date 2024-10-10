@@ -8,7 +8,8 @@ const Index = () => {
     {
       title: "Code Kshetra",
       para: "Hackathon",
-      details: "Organized Delhi's one of the largest hackathons, with 400+ active coders, 50 Lakh+ prize pool, and a devfolio rating of 4.5.",
+      details:
+        "Organized Delhi's one of the largest hackathons, with 400+ active coders, 50 Lakh+ prize pool, and a devfolio rating of 4.5.",
     },
     {
       title: "Techfest Win",
@@ -23,13 +24,14 @@ const Index = () => {
     {
       title: "Code Hunt",
       para: "Event",
-      details: "1st Prize at Coding Competition Code Hunt organized by TechQube.",
+      details:
+        "1st Prize at Coding Competition Code Hunt organized by TechQube.",
     },
-    {
-      title: "Hack Vortex",
-      para: "Tech Fest",
-      // details: "1st Prize at Coding Competition Hack Vortex organized by TechQube.",
-    },
+    // {
+    //   title: "Hack Vortex",
+    //   para: "Tech Fest",
+    // details: "1st Prize at Coding Competition Hack Vortex organized by TechQube.",
+    // },
   ];
 
   return (
@@ -44,11 +46,17 @@ const Index = () => {
             </div>
             <div className={styles.img}>
               {/* Rocket Image */}
-              <img src="/achievements_page/1.png" alt="Rocket" className="w-22 h-22" />
+              <img
+                src="/achievements_page/1.png"
+                alt="Rocket"
+                className="w-22 h-22"
+              />
             </div>
             <div className={styles.content}>
               <div className={styles.heading}>
-                <h1 className="text-4xl md:text-6xl font-bold text-center mt-6 md:mt-12">ACHIEVEMENTS</h1>
+                <h1 className="text-4xl md:text-6xl font-bold text-center mt-12 md:mt-24">
+                  ACHIEVEMENTS
+                </h1>
               </div>
               <div className={styles.cardscontainer}>
                 {/* Responsive grid with spacing between cards */}
@@ -62,7 +70,9 @@ const Index = () => {
                       <div className="w-full h-full bg-gradient-to-r from-[#1a1a1a] to-[#333333] rounded-[20px] transition-all duration-200 hover:scale-98 focus:scale-98 flex flex-col justify-center items-center text-white p-4">
                         <h3 className="font-bold text-lg">{card.title}</h3>
                         <p className="text-gray-300 text-md">{card.para}</p>
-                        <p className="text-gray-400 mt-2 text-sm text-center">{card.details}</p>
+                        <p className="text-gray-400 mt-2 text-sm text-center">
+                          {card.details}
+                        </p>
                       </div>
                     </div>
                   ))}

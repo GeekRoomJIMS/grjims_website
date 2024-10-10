@@ -28,7 +28,7 @@
 
 .blog-page {
   overflow-y: scroll;
-  
+
   &::-webkit-scrollbar {
     width: 0 !important;
   }
@@ -36,6 +36,7 @@
     color: #fcfafa;
   }
 }
+
 .blog-card {
   background: #151515;
   border: 1px solid #ffffff40;
@@ -116,5 +117,4 @@
       }
     }
   }
-
 }
