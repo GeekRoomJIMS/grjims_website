@@ -20,6 +20,16 @@ const MainCards = () => {
       teams: "400+",
       status: "Know more",
     },
+    {
+      id: 2,
+      date: "25-9-2024",
+      enddate: "28-9-2024 ",
+      category: "previous",
+      title: "Tech Vortex",
+      description: `Exciting 4-day tech fest that brings together tech enthusiasts from various domains with over 150 participants. `,
+      teams: "150+",
+      status: "Know more",
+    },
   ]);
 
   const toggleSortingOrder = () => {
@@ -56,8 +66,8 @@ const MainCards = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="text-white font-bold text-md sm:text-lg md:text-xl lg:text-2xl flex flex-col lg:flex-row mb-5  justify-center md:justify-around items-center  max-w-7xl mx-auto ">
+    <Navbar />
+      <div className="pt-16 text-white font-bold text-md sm:text-lg md:text-xl lg:text-2xl flex flex-col lg:flex-row mb-5  justify-center md:justify-around items-center  max-w-7xl mx-auto ">
         <div className="my-3">
           <button className="mr-4 md:mr-10" onClick={togglePreviousEvents}>
             Previous Events
