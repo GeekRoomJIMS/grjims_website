@@ -31,7 +31,7 @@ const Nav = () => {
       </nav>
 
       {isOpen && (
-        <div className="flex flex-col items-center basis-full">
+        <div className="flex flex-col items-center basis-full md:hidden">
           <NavLinks />
         </div>
       )}

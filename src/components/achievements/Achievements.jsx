@@ -37,14 +37,14 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <div className={styles.container}>
+      <div className={styles.container} >
         <div className="maincontainer">
-          <div className={styles.innercontainer}>
-            <div className={styles.bgimg}>
+          <div className={styles.innercontainer} >
+            <div className={styles.bgimg}style={{paddingTop:'80px'}} >
               {/* Background Image */}
               <img src="/achievements_page/1.png" alt="Background" />
             </div>
-            <div className={styles.img}>
+            <div className={styles.img} style={{paddingTop:'80px'}}>
               {/* Rocket Image */}
               <img
                 src="/achievements_page/1.png"
