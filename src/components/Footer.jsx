@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaEnvelope, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <footer
       className="mt-auto"
@@ -10,17 +18,22 @@ const Footer = () => {
         backgroundColor: "rgba(0, 0, 0, 0.4)",
         color: "#fff",
         width: "100%",
-        padding: "20px 0",
+        padding: isMobile ? "40px 0" : "20px 0",
       }}
     >
       <Container>
         <Row className="justify-content-between">
-          <Col md={6} xs={12} className="text-center text-md-start">
+          <Col
+            md={6}
+            xs={12}
+            className="text-center text-md-start"
+            style={{ marginBottom: isMobile ? "30px" : "0px" }}
+          >
             <h1
               style={{
                 fontFamily: "Montserrat, sans-serif",
-                fontSize: "3rem",
-                fontWeight: "700",
+                fontSize: isMobile ? "1.8rem" : "2.4rem",
+                fontWeight: "600",
               }}
             >
               GEEK ROOM JIMS
@@ -28,7 +41,7 @@ const Footer = () => {
             <h4
               style={{
                 fontFamily: "Sora, sans-serif",
-                fontSize: "1.5rem",
+                fontSize: isMobile ? "1.2rem" : "1.4rem",
                 marginTop: "10px",
               }}
             >
@@ -41,20 +54,20 @@ const Footer = () => {
             md={2}
             xs={12}
             className="text-center text-md-start mt-4 mt-md-0"
+            style={{ marginBottom: isMobile ? "30px" : "0px" }}
           >
-            <h4
-              style={{
-                fontFamily: "Sora, sans-serif",
-                fontSize: "1.5rem",
-              }}
-            >
+            <h4 style={{ fontFamily: "Sora, sans-serif", fontSize: "1.3rem" }}>
               Links
             </h4>
             <ul className="list-unstyled">
               <li>
                 <a
                   href="/"
-                  style={{ color: "#eaece5", textDecoration: "none" }}
+                  style={{
+                    color: "#eaece5",
+                    textDecoration: "none",
+                    fontSize: "0.9rem",
+                  }}
                 >
                   Home
                 </a>
@@ -62,7 +75,11 @@ const Footer = () => {
               <li>
                 <a
                   href="/events"
-                  style={{ color: "#eaece5", textDecoration: "none" }}
+                  style={{
+                    color: "#eaece5",
+                    textDecoration: "none",
+                    fontSize: "0.9rem",
+                  }}
                 >
                   Events
                 </a>
@@ -70,7 +87,11 @@ const Footer = () => {
               <li>
                 <a
                   href="/achievements"
-                  style={{ color: "#eaece5", textDecoration: "none" }}
+                  style={{
+                    color: "#eaece5",
+                    textDecoration: "none",
+                    fontSize: "0.9rem",
+                  }}
                 >
                   Achievements
                 </a>
@@ -78,7 +99,11 @@ const Footer = () => {
               <li>
                 <a
                   href="/blogs"
-                  style={{ color: "#eaece5", textDecoration: "none" }}
+                  style={{
+                    color: "#eaece5",
+                    textDecoration: "none",
+                    fontSize: "0.9rem",
+                  }}
                 >
                   Blogs
                 </a>
@@ -93,7 +118,7 @@ const Footer = () => {
             <h4
               style={{
                 fontFamily: "Sora, sans-serif",
-                fontSize: "1.5rem",
+                fontSize: "1.3rem",
               }}
             >
               Contact Us
@@ -101,21 +126,23 @@ const Footer = () => {
             <p
               style={{
                 fontFamily: "Montserrat, sans-serif",
-                fontSize: "1rem",
+                fontSize: "0.9rem",
                 color: "#eaece5",
                 textAlign: "justify",
               }}
             >
-              <b>Email</b> : <a
+              <b>Email</b> :{" "}
+              <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=geekroomjimsrohini@gmail.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                style={{color:"#64B5F6"}}
-              >geekroomjimsrohini@gmail.com</a>
+                style={{ color: "#64B5F6" }}
+              >
+                geekroomjimsrohini@gmail.com
+              </a>
               <br />
-              <b>Institution</b> : Jagan Institute of Management Studies, Sector-5, Rohini, Delhi
-
-
+              <b>Institution</b> : Jagan Institute of Management Studies,
+              Sector-5, Rohini, Delhi
             </p>
             <div className="d-flex justify-content-center justify-content-md-start">
               <a
@@ -128,8 +155,8 @@ const Footer = () => {
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
-                    width: "30px",
-                    height: "30px",
+                    width: "27px",
+                    height: "27px",
                   }}
                 />
               </a>
@@ -143,8 +170,8 @@ const Footer = () => {
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
-                    width: "30px",
-                    height: "30px",
+                    width: "27px",
+                    height: "27px",
                   }}
                 />
               </a>
@@ -157,8 +184,8 @@ const Footer = () => {
                   style={{
                     color: "HighlightText",
                     strokeWidth: "2px",
-                    width: "30px",
-                    height: "30px",
+                    width: "27px",
+                    height: "27px",
                   }}
                 />
               </a>
