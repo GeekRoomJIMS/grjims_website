@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* #img {
   padding-top: 10px;
   padding-left: 10px;
@@ -39,7 +39,7 @@
   padding: 20px;
 }
 
-.font-bold{
+.font-bold {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
 }
@@ -49,14 +49,12 @@
   font-weight: 800;
 }
 
-.py-8{
+.py-8 {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
 }
 
-@media (min-width: 768px) {
-  .left-column {
-    background: url("../../assets/images/bg_img.png") no-repeat center center;
-    background-size: contain;
-  }
+.left-column {
+  background: url("../../assets/images/bg_img.png") no-repeat center center;
+  background-size: contain;
 }

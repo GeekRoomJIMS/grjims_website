@@ -5,8 +5,8 @@ import curve from "../../assets/curve.png";
 function Hero() {
   return (
     <>
-      <div className="App">
-        <div className="left-column hidden md:block mt-28"></div>
+      <div className="App flex-col md:flex-row">
+        <div className="left-column mt-28"></div>
         <div className="right-column w-full md:w-6/12 h-full flex flex-col justify-center items-center px-4 md:px-0">
           <h1 className="mt-28 text-4xl md:text-5xl lg:text-7xl font-bold text-center">
             Geek Room
