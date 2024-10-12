@@ -164,19 +164,13 @@ const Contact = () => {
         >
           <div
             id="left"
-            className="font-semibold  max-w-[80rem] m-auto w-full px-[2rem] md:px-[1rem] lg:px-[2rem] py-[1.5rem] "
+            className="font-semibold max-w-[80rem] m-auto w-full md:px-[1rem] lg:px-[2rem] py-[1.5rem] "
           >
-            <div className="form-wrapper max-w-[32rem]">
-              <div className="heading mb-[1.2rem]">
-              <h1 className="text-[1.8rem] md:text-[2rem] lg:text-[2.4rem] text-[#FF1493] leading-tight mb-0 whitespace-nowrap text-left pl-2">
-  Let's work together
-</h1>
-
-
-
-
-
-
+            <div className="max-w-[32rem]">
+              <div className="mb-[1.2rem]">
+                <h1 className="text-[1.8rem] md:text-[2rem] lg:text-[2.4rem] text-[#FF1493] whitespace-nowrap leading-tight mb-0 text-left lg:pl-2">
+                  Let's work together
+                </h1>
 
                 <p className="text-[#636972] text-[0.90rem] md:text-base leading-4 mt-2">
                   or reach us via :
