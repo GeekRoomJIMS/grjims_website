@@ -168,9 +168,16 @@ const Contact = () => {
           >
             <div className="form-wrapper max-w-[32rem]">
               <div className="heading mb-[1.2rem]">
-                <h1 className="md:text-[2.2rem] lg:text-[2.8rem] text-[#FF1493] text-2xl leading-tight whitespace-no-wrap">
-                  Let's work together
-                </h1>
+              <h1 className="text-[1.8rem] md:text-[2rem] lg:text-[2.4rem] text-[#FF1493] leading-tight mb-0 whitespace-nowrap text-left pl-2">
+  Let's work together
+</h1>
+
+
+
+
+
+
+
                 <p className="text-[#636972] text-[0.90rem] md:text-base leading-4 mt-2">
                   or reach us via :
                   <a className="ml-2 text-blue-500 duration-300 hover:underline transition-all hover:text-blue-700 cursor-pointer">
